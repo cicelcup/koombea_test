@@ -14,6 +14,7 @@ class User {
   final String firstName;
   final String lastName;
   final String email;
+  @JsonKey(name: "pictureURL")
   final String pictureUrl;
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
